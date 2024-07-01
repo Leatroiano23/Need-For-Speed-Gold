@@ -10,7 +10,7 @@ header {
   background: rgb(0, 0, 0);
   border-top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0 40px;
   height: 70px;
@@ -20,7 +20,6 @@ header {
 .navbar-lista {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -29,7 +28,7 @@ header {
 }
 
 .navbar {
-  gap: 80px;
+  gap: 85px;
 }
 
 .navbar-lista {
@@ -40,15 +39,20 @@ header {
   color: rgb(255, 255, 255);
   font-size: 18px;
 }
-
+.btn-compra {
+  background: white;
+  color: black;
+  padding: 10px;
+  margin: 0 20px;
+  font-weight: 550;
+}
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  background: rgba(25, 25, 29, 0.986);
-  color: rgb(0, 0, 0);
+  background: linear-gradient(45deg, #bdc3c7, #2c3e50, #12c2e9, black);
 }
 
 #hero {
@@ -93,6 +97,9 @@ main {
   display: flex;
   padding-top: 25px;
   margin: 0 auto;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .hero-info a {
   color: black;
@@ -100,20 +107,22 @@ main {
   padding: 15px;
   margin: 0 15px;
 }
+
 .btn-uno {
   background: white;
 }
 .btn-dos {
-  background: rgb(56, 160, 201);
+  background: #12c2e9;
 }
 #data {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
+  background: linear-gradient(45deg, #2c3e50, black);
 }
 
 .data-novedades h2 {
@@ -153,13 +162,14 @@ main {
   justify-content: center;
   align-items: center;
   gap: 70px;
-  background: rgba(52, 52, 63, 0.986);
+  background-image: url(img-page/backgraund.jpg);
 }
 
 #info h2 {
   font-size: 38px;
-  font-weight: 750;
-  color: white;
+  font-weight: 650;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
 }
 
 .info-card-conteiner {
@@ -168,15 +178,15 @@ main {
 }
 
 .info-card {
-  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 20px;
-  border-radius: 10px;
+
   max-width: 350px;
+  background: white;
 }
 
 .info-card img {
@@ -186,23 +196,72 @@ main {
 .info-card h3 {
   font-size: 18px;
   font-weight: 600;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .info-card p {
   font-size: 15px;
   font-weight: 300;
-  color: white;
+  color: rgb(0, 0, 0);
+  padding-bottom: 25px;
 }
 
+#final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 0;
+  gap: 180px;
+}
+
+.final-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  width: 50%;
+  padding: 25px 0;
+}
+
+.final-text h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+
+.final-text p {
+  font-size: 18px;
+  width: 80%;
+  color: white;
+  text-align: center;
+}
+
+.final-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.final-form input {
+  font-size: 15px;
+  padding: 15px 50px;
+  margin: 10px;
+  background: transparent;
+  border: 2px solid white;
+}
+.final-condiciones {
+  color: white;
+}
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 20px 0;
-  background: rgba(44, 44, 56, 0.986);
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0.986);
 }
 
 footer a,
