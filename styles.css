@@ -52,7 +52,7 @@ main {
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(45deg, #bdc3c7, #2c3e50, #12c2e9, black);
+  background: linear-gradient(45deg, #bdc3c7, #2c3e50, #093637, black);
 }
 
 #hero {
@@ -102,17 +102,18 @@ main {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .hero-info a {
-  color: black;
   border-radius: 10px;
   padding: 15px;
   margin: 0 15px;
 }
 
 .btn-uno {
+  color: black;
   background: white;
 }
 .btn-dos {
-  background: #12c2e9;
+  color: white;
+  background: black;
 }
 #data {
   width: 100%;
@@ -184,7 +185,6 @@ main {
   justify-content: center;
   text-align: center;
   gap: 20px;
-
   max-width: 350px;
   background: white;
 }
@@ -241,12 +241,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }
 
-.final-form input {
+.final-input-1 {
+  align-self: start;
   font-size: 15px;
-  padding: 15px 50px;
+  padding: 15px 40px;
   margin: 10px;
   background: transparent;
   border: 2px solid white;
@@ -254,6 +254,17 @@ main {
 .final-condiciones {
   color: white;
 }
+
+.final-input-2 {
+  font-size: 15px;
+  color: white;
+  align-self: start;
+  background: #44a08d;
+  padding: 10px 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -295,12 +306,14 @@ footer p {
     right: 5%;
     flex-direction: column;
     width: 90%;
-    background: rgb(36, 123, 194);
+    background: #2c3e50;
     border: 2px solid black;
     border-top: 0;
     border-radius: 0px 0px 15px 15px;
     padding: 65px 0;
-    display: none;
+    /*display: none;*/
+    transform: translate(200%);
+    transition: all 0.5s;
   }
 
   .navbar-lista a {
@@ -317,7 +330,8 @@ footer p {
   }
 
   #menu-toggle:checked + .navbar-lista {
-    display: flex;
+    /*display: flex;*/
+    transform: translate(0);
   }
 
   .hero-info {
