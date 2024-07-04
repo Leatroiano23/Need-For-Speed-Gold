@@ -39,3 +39,11 @@
   box-shadow: 5px 5px 20px rgba(rgb(0, 0, 0, 0.4));
   transform: translateY(-3%);
 }
+
+.navbar-lista a {
+  transition: 0.2s;
+}
+
+.navbar-lista a:hover {
+  color: #44a08ddb;
+}

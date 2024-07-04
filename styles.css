@@ -351,6 +351,16 @@ footer p {
   .data-novedades {
     max-width: 70%;
   }
+
+  .btn-compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 576px) {
