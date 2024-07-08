@@ -383,11 +383,13 @@ footer p {
   }
   .final-text h1 {
     font-size: 150%;
+    align-items: center;
+    justify-content: center;
   }
 
   .final-text p {
     font-size: 150%;
-    padding-left: 75px;
+    padding-left: 85px;
   }
   .final-form {
     justify-content: center;
