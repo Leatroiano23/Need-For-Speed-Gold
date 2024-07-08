@@ -217,6 +217,7 @@ main {
 .final-text {
   display: flex;
   flex-direction: column;
+
   align-items: flex-start;
   gap: 25px;
   width: 50%;
@@ -415,6 +416,7 @@ footer p {
     gap: 20px;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .data-novedades h2 {
@@ -471,5 +473,11 @@ footer p {
   .footer-links {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
